@@ -99,6 +99,39 @@ body {
     font-family: "IBM Plex Sans KR", sans-serif;
 }
 
+#leaf-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/leaf.png');
+    /* 나뭇잎 PNG 이미지 URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
 .menu-button {
     position: fixed;
     top: 30px;
@@ -111,7 +144,7 @@ body {
     width: 35px;
     height: 5px;
     margin: 6px 0;
-    background-color: #000;
+    background-color: orangered;
     transition: 0.3s;
 }
 
@@ -122,8 +155,8 @@ body {
     /* 처음에 화면 밖에 숨김 */
     width: 200px;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
     z-index: 10000;
     transition: left 0.3s ease;
     padding: 100px 20px;
@@ -144,7 +177,7 @@ body {
 }
 
 .side-menu ul li a {
-    color: white;
+    color: black;
     font-size: 19px;
     text-decoration: none;
     display: block;
@@ -550,7 +583,7 @@ section h2 span {
     top: 0;
     left: 0;
     width: 400px;
-    margin-left: 300px;
+    margin-left: 200px;
     margin-top: 800px;
     /* 원하는 크기 */
 }
@@ -596,8 +629,50 @@ section h2 span {
     gap: 50px;
 }
 
+.projects_section .projects_grid1,
+.projects_section .projects_grid2 {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projects_card1,
+.projects_card2,
+.projects_card3,
+.projects_card4,
+.projects_card5,
+.projects_card6,
+.projects_card7,
+.projects_card8,
+.projects_card9,
+.projects_card10 {
+    width: 300px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.projects_card1:hover,
+.projects_card2:hover,
+.projects_card3:hover,
+.projects_card4:hover,
+.projects_card5:hover,
+.projects_card6:hover,
+.projects_card7:hover,
+.projects_card8:hover,
+.projects_card9:hover,
+.projects_card10:hover {
+    transform: translateY(-10px)scale(1.1);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
 .projects_section .projects_grid1 .projects_card1 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
     display: flex;
@@ -621,9 +696,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid1 .projects_card2 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card2 .go-button {
@@ -643,9 +720,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid1 .projects_card3 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card3 .go-button {
@@ -665,9 +744,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid1 .projects_card4 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card4 .go-button {
@@ -687,9 +768,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid1 .projects_card5 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card5 .go-button {
@@ -709,9 +792,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid2 .projects_card6 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card6 .go-button {
@@ -731,9 +816,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid2 .projects_card7 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card7 .go-button {
@@ -753,9 +840,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid2 .projects_card8 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card8 .go-button {
@@ -775,9 +864,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid2 .projects_card9 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card9 .go-button {
@@ -797,9 +888,11 @@ section h2 span {
 }
 
 .projects_section .projects_grid2 .projects_card10 {
-    width: 457px;
+    width: 500px;
     height: 651px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .projects_card10 .go-button {
