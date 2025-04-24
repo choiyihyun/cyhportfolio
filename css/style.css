@@ -1,5 +1,50 @@
 @charset "utf-8";
 
+#brand-intro {
+    position: fixed;
+    z-index: 9999;
+    background: linear-gradient(to bottom right, #fdf6e3, #d4eac8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 1s ease;
+}
+
+.brand-name {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.5em;
+    justify-content: center;
+}
+
+.welcome {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+#enter-btn {
+    display: flex;
+    margin: 0 auto;
+    padding: 0.7em 1.5em;
+    font-size: 1rem;
+    background-color: #ff8a65;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#enter-btn:hover {
+    background-color: #ff7043;
+}
+
 .custom-cursor {
     position: fixed;
     top: 0;
