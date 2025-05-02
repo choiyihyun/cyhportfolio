@@ -604,7 +604,7 @@ section h2 span {
 
 .projects_tit h2 {
     display: flex;
-    font-size: 50px;
+    font-size: 88px;
     margin-top: 200px;
     justify-content: center;
 }
@@ -613,6 +613,7 @@ section h2 span {
     display: flex;
     justify-content: center;
     margin-top: -30px;
+    font-size: 30px;
 }
 
 
