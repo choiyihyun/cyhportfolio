@@ -48,12 +48,12 @@ $(function () {
     const intro = document.getElementById('brand-intro');
     const content = document.getElementById('portfolio-content');
 
-    enterBtn.addEventListener('click', () => {
-        intro.style.opacity = '0';
-        setTimeout(() => {
-            intro.style.display = 'none';
-            content.style.display = 'block';
-        }, 1000); // fade out 후 실제 콘텐츠 등장
-    });
+    /*  enterBtn.addEventListener('click', () => {
+         intro.style.opacity = '0';
+         setTimeout(() => {
+             intro.style.display = 'none';
+             content.style.display = 'block';
+         }, 1000); // fade out 후 실제 콘텐츠 등장
+     }); */
 
 });

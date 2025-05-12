@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-#brand-intro {
+/* #brand-intro {
     position: fixed;
     z-index: 9999;
     background: linear-gradient(to bottom right, #fdf6e3, #d4eac8);
@@ -43,7 +43,7 @@
 
 #enter-btn:hover {
     background-color: #ff7043;
-}
+} */
 
 .custom-cursor {
     position: fixed;
