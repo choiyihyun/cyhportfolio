@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cyh portfolio1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"> <!-- Swiper JS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/common.js"></script>
+
+</head>
+
+<body class="no-scroll">
+
+    <div id="brand-intro">
+        <div class="intro-content">
+            <h1 class="brand-name">CYH Portfolio</h1>
+            <p class="welcome">최이현의 포트폴리오에 오신것을 환영합니다</p>
+            <button id="enter-btn">입장하기</button>
+        </div>
+    </div>
+
+    <div class="custom-cursor">
+        <img src="img/character.png" alt="cursor" />
+    </div>
+    <div class="wrap" id="portfolio-content">
+        <div id="leaf-container"></div>
+        <!-- Swiper -->
+        <!-- <section class="swiper main_visual">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#intro">
+                                    소개
+                                    <p>→ Intro</p>
+                                </a></li>
+                            <li><a href="#qa">
+                                    키워드에대한 질문과 답변
+                                    <p>→ Q&A</p>
+
+                                </a></li>
+                            <li><a href="#ability">
+                                    스킬 도구를 다루는 능력
+                                    <p>→ Ability</p>
+
+                                </a></li>
+                            <li><a href="#projects">
+                                    uxui 디자인 프로젝트
+                                    <p>→ UXUI Design</p>
+
+                                </a></li>
+                            <li><a href="#thankyou">
+                                    연락처
+                                    <p>→ contact</p>
+
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div> -->
+        <div class="content">
+            <div class="menu-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <div class="side-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">🌼 소개 <p>→ Intro</p></a></li>
+                        <li><a href="#qa">🌼 키워드에 대한 질문과 답변 <p>→ Q&A</p></a></li>
+                        <li><a href="#ability">🌼 스킬 도구를 <br>다루는 능력<p>→ Ability</p></a></li>
+                        <li><a href="#projects">🌼 uxui 디자인 <br>프로젝트<p>→ UXUI Design</p></a></li>
+                        <li><a href="#thankyou">🌼 연락처<p>→ contact</p></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- header -->
+            <div id="intro" id="header">
+                <img src="img/hello 1.png" alt="배경 이미지" class="background" />
+                <img src="img/person.png" alt="인물 이미지" class="foreground" />
+            </div><!-- header -->
+            <div class="left">
+                <p>UXUI Design portfolio<br><span>ChoiYiHyun</span></p>
+            </div>
+            <div class="right">
+                <p>창의성<br>기능성<br>미와 기능의 조화</p>
+            </div>
+        </div><!-- wrap -->
+
+
+        <section id="qa" class="qa_section">
+            <h2>Q&A <span>Keywords</span></h2>
+
+            <div class="qa_grid">
+                <div class="qa_card">
+                    <img src="img/Frame 42.png" alt=""><!-- 프론트카드 -->
+                    <div class="txt_box"><!-- 백카드 -->
+                        <p>취업준비 동기</p>
+
+                        오랜기간동안 보람있고
+                        <br>자부심을 가지면서
+                        <br>할 수 있는 직업이 무엇일까
+                        <br>고민하다가 UXUI디자이너 준비를
+                        <br>시작했습니다.
+
+                    </div><!-- txt_box -->
+                </div>
+                <div class="qa_card">
+                    <img src="img/Frame 43.png" alt="">
+                    <div class="txt_box">
+                        <p>나의 디자인 철학은?</p>
+
+                        자기자신의 만족을 넘어서
+                        <br>공감대를 형성해야 한다고 생각하고
+                        <br>흥미를 줄 수 있는 요소가 있으면
+                        <br>더 좋다고 생각합니다.
+
+                    </div><!-- txt_box -->
+                </div>
+                <div class="qa_card">
+                    <img src="img/Frame 44.png" alt="">
+                    <div class="txt_box">
+                        <p>문제가 생겼을때는?</p>
+
+                        개인적인 부분은 반성을 하고
+                        <br>더 나은 사람이 되어야하고
+                        <br>공동적인 부분은 나한테 문제가
+                        <br>있다면 나의 장점으로 상황을
+                        <br>해결해야 합니다.
+
+                    </div><!-- txt_box -->
+                </div>
+                <div class="qa_card">
+                    <img src="img/Frame 47.png" alt="">
+                    <div class="txt_box">
+                        <p>자신감있는 부분은?</p>
+
+                        감각적인 부분에 대한 자신감이
+                        <br>있습니다.
+
+                    </div><!-- txc_box -->
+                </div>
+                <div class="qa_card">
+                    <img src="img/Frame 46.png" alt="">
+                    <div class="txt_box">
+                        <p>의지가 있는지?</p>
+
+                        처음에는 낯설어하는 분야도
+                        <br>관심이 생기면 의지가 생기는
+                        <br>성향입니다.
+
+                    </div><!-- txt_box -->
+                </div>
+                <div class="qa_card">
+                    <img src="img/Frame 45.png" alt="">
+                    <div class="txt_box">
+                        <p>하고싶은말은?</p>
+
+                        차분히 준비해서 노력형 디자이너가
+                        <br>되고싶습니다.
+
+                    </div><!-- txt_box -->
+                </div>
+            </div><!-- qa_grid -->
+            <!-- <div class="hashtag">
+                <p>#동기 #디자인철학 #문제해결 #자신감 #의지 #하고싶은말</p>
+            </div> hashtag -->
+        </section><!-- qa_section -->
+
+        <section id="ability" class="ability_section">
+
+            <div class="ability_box">
+                <h2>Ability<span> of <em>Skills Design Tools</em></span></h2>
+                <div class="ability_box1 ability_box">
+                    <img src="img/Frame 425.png" alt="">
+                    <div class="ability_txt">
+                        <p>
+                            일러스트로 그림을
+                            <br>벡터로 그릴 수 있습니다
+                        </p>
+                    </div>
+                </div><!-- ability_box1 -->
+                <div class="ability_box2 ability_box">
+                    <img src="img/Frame 426.png" alt="">
+                    <div class="ability_txt">
+                        <p>
+                            포토샵으로 사진을
+                            <br>수정할 수 있습니다
+                        </p>
+                    </div>
+                </div><!-- ability_box2 -->
+
+                <div class="ability_box3 ability_box">
+                    <img src="img/Frame 430.png" alt="">
+                    <div class="ability_txt">
+                        <p>
+                            글씨를 쓰고
+                            <br>배열할 수 있습니다
+                        </p>
+                    </div>
+                </div><!-- ability_box3 -->
+                <div class="ability_box4 ability_box">
+                    <img src="img/Frame 429.png" alt="">
+                    <div class="ability_txt">
+                        <p>
+                            챗Gpt로 이미지를
+                            <br>생성할 수 있습니다
+                        </p>
+                    </div>
+                </div><!-- ablilty_box4 -->
+                <div class="ability_box5 ability_box">
+                    <img src="img/Frame 428.png" alt="">
+                    <div class="ability_txt">
+                        <p>
+                            피그마로 디자인을
+                            <br>할 수 있습니다
+                        </p>
+                    </div>
+                </div><!-- ability_box5 -->
+                <div class="ability_box6 ability_box">
+                    <img src="img/Frame 427.png" alt="">
+                    <div class="ability_txt">
+                        <p>
+                            코딩할 때 HTML CSS를
+                            <br>간단하게 짤 수 있습니다
+                        </p>
+                    </div>
+                </div><!-- ability_box6 -->
+            </div><!-- ability_box_bottom -->
+        </section><!-- ability -->
+
+        <section class="projects_tit" id="projects">
+            <h2>UXUI Design</h2>
+            <p>개인 & 팀 프로젝트</p>
+        </section>
+
+        <section class="projects">
+            <div class="inner">
+                <div class="falling_img">
+                    <img src="img/flower.png" />
+                </div>
+                <div class="projects_box">
+                    <div class="projects_box1">
+                        <div class="projects_card1">
+                            <img src="img/Frame 435.png" alt="everland">
+                            <div class="frame">
+                                <p>에버랜드<br>
+                                    <span>
+                                        에버랜드 홈페이지를
+                                        <br>재 디자인한
+                                        개인 프로젝트입니다
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="buttons">
+                                <a href="https://www.figma.com/proto/hcPOdIOnGRGSzUxZaOBxx7/%EC%B5%9C%EC%9D%B4%ED%98%84?page-id=1251%3A2&node-id=1405-14&viewport=1745%2C-2706%2C0.06&t=rLrCqc7iJmN68UwF-1&scaling=min-zoom&content-scaling=fixed"
+                                    target="_blank" class="go-button">기획서</a>
+                            </div><!-- buttons -->
+                        </div>
+                        <div class="projects_card2">
+                            <img src="img/Frame 57.png" alt="cafemonggle">
+                            <div class="frame">
+                                <p>카페몽글<br>
+                                    <span>개인카페 카페몽글을
+                                        <br>디자인한
+                                        개인 프로젝트입니다
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="buttons">
+                                <a href="./cafe_monggle/index.html"
+                                    target="_blank" class="go-button">홈페이지</a>
+                            </div><!-- buttons -->
+                        </div>
+                    </div><!-- projects_box1 -->
+                    <div class="projects_box2">
+                        <div class="projects_card3">
+                            <img src="img/lamuse.png" alt="lamuse">
+                            <div class="frame">
+                                <p>La MUSE<br>
+                                    <span>
+                                        매거진사이트 라뮤즈를<br>
+                                        디자인한
+                                        팀 프로젝트입니다
+                                    </span>
+                                </p>
+                            </div>
+                            <a href="https://hyeriinn.github.io/lamuse/" target="_blank" class="go-button">홈페이지</a>
+                        </div>
+
+                        <div class="projects_card4">
+                            <img src="img/fastballz.png" alt="fastballz">
+                            <div class="frame">
+                                <p>Fastballz<br>
+                                    <span>
+                                        야구 커뮤니티사이트 패스트볼즈를<br>
+                                        디자인한
+                                        팀 프로젝트입니다 (수정중입니다)
+                                    </span>
+                                </p>
+                            </div>
+                            <a href="https://fastballz.vercel.app/" target="_blank" class="go-button">홈페이지</a>
+                        </div>
+                        <div class="projects_card10">
+                            <img src="img/Frame 441.png" alt="creator">
+                            <div class="frame">
+                                <p>creator<br>
+                                    <span>
+                                        크리에이터 cyh1의<br>
+                                        이모티콘 '씨미'입니다
+                                    </span>
+                                </p>
+                            </div>
+                            <a href="https://naver.me/5cqG2vdd" class="go-button">홈페이지</a>
+                        </div>
+                    </div><!-- projects_box2 -->
+                </div>
+            </div>
+            <!--<section class="re_design">
+                <div class="re_design_tit">
+                    <h3>리디자인</h3>
+                </div> redesign_tit
+                <div class="re_design_list">
+                    <div class="company"><em>NATIONAL BALLET</em>
+                        <p>디자인,코딩</p><span>브랜딩</span>
+                    </div>
+                    <a class="bg bg1" href="./national_ballet/index.html"></a>
+                    <div class="cube"><em>cyh AI</em>
+                        <p>디자인,코딩</p><span>브랜딩</span>
+                    </div>
+                    <a class="bg bg2" href="./cyh_ai/index.html"></a>
+                    <div class="cosmetic"><em>cyh cosmetic</em>
+                        <p>디자인,코딩</p><span>브랜딩</span>
+                    </div>
+                    <a class="bg bg3" href="./cyh_cosmetic/index.html"></a>
+                    <div class="clock"><em>cyh watch</em>
+                        <p>디자인,코딩</p><span>브랜딩</span>
+                    </div>
+                    <a class="bg bg4" href="./cyh_clock/index.html"></a>
+                </div>re_design_list -->
+            </section><!-- re_design -->
+        </section><!-- projects -->
+
+
+        <footer class="footer" id="thankyou">
+            <h2>Thank you</h2>
+            <p>최이현<br><br>
+                주소 : 수원시 곡선동<br>메일 : soo-jung2@naver.com<br>카카오톡 아이디 : yihyunchoi
+            </p>
+            <!-- <div class="img1">
+                <a href="#"><img src="img/cyh.png" alt=""></a>
+            </div> -->
+            <div class="img2">
+                <a href="#"><img src="img/qrcode.png" alt=""></a>
+            </div>
+        </footer>
+</body>
+
+</html>

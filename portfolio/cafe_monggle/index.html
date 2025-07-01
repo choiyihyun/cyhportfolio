@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+   <meta name="description" content="cafe_monggle">
+   <meta name="keywords" content="개인카페,몽글몽글,카페몽글">
+   <meta name="author" content="cyh">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>카페 몽글</title>
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="js/main.js"></script>
+   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/common.css">
+   <link rel="stylesheet" href="css/main_style.css">
+</head>
+
+<body>
+   <div class="wrap">
+      <header>
+         <div class="inner">
+            <h1><a href="#"><img src="img/logo.png" alt=카페몽글></a></h1>
+            <nav>
+               <ul class="gnb">
+                  <li><a href="#">홈</a>
+                  </li>
+                  <li><a href="#">메뉴</a>
+                     <ul class="sub">
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">디저트</a></li>
+                        <li><a href="#">굿즈</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">레시피</a>
+                     <ul class="sub">
+                        <li><a href="#">커피</a></li>
+                        <li><a href="#">음료</a></li>
+                        <li><a href="#">디저트</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">뉴스</a>
+                     <ul class="sub">
+                        <li><a href="#">가게 소식</a></li>
+                        <li><a href="#">메뉴 신상</a></li>
+                        <li><a href="#">후기</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="#">이벤트</a></li>
+               </ul>
+            </nav>
+            <div class="top_icons">
+               <a href="#"><img src="img/Search.png" alt="돋보기"></a>
+               <a href="#"><img src="img/Share.png" alt="공유"></a>
+            </div><!-- //top_icons -->
+         </div><!-- //inner -->
+      </header>
+      <div class="main_visual swiper">
+         <ul class="swiper-wrapper">
+            <li class="swiper-slide slide1"><a href="#"></a></li>
+            <li class="swiper-slide slide2"><a href="#"></a></li>
+            <li class="swiper-slide slide3"><a href="#"></a></li>
+         </ul>
+      </div><!-- //.main_visual -->
+
+      <section class="contents1">
+
+         <div class="inner">
+            <h2><a href="#">재료</a></h2>
+            <article>
+               <a href="img/stevia_explain_img.png">
+                  <div class="img_box">
+                     <img src="img/stevia.png" alt="">
+                  </div>
+                  <p>스테비아</p>
+               </a>
+            </article>
+            <article>
+               <a href="img/coffeebean_explain_img.png">
+                  <div class="img_box">
+                     <img src="img/coffeebean.png" alt="">
+                  </div>
+                  <p>커피콩</p>
+               </a>
+            </article>
+            <article>
+               <a href="img/fruits_explain_img.png">
+                  <div class="img_box">
+                     <img src="img/fruit_vegetable.png" alt="">
+                  </div>
+                  <p>과일</p>
+               </a>
+            </article>
+         </div><!-- //ingredient -->
+      </section><!-- //contents1 -->
+
+      <section class="contents2 swiper">
+         <h2 class="inner"><a href="#"></a>인기 메뉴</h2>
+         <div class="swiper-wrapper">
+            <article class="swiper-slide americano">
+               <a href="#"><img src="img/img01.png" alt="">
+                  <p>아메리카노</p>
+               </a>
+            </article>
+            <article class="swiper-slide latte">
+               <a href="#"><img src="img/img02.png" alt="">
+                  <p>라떼</p>
+               </a>
+            </article>
+            <article class="swiper-slide choco_latte">
+               <a href="#"><img src="img/img03.png" alt="">
+                  <p>초코라떼</p>
+               </a>
+            </article>
+            <article class="swiper-slide bread">
+               <a href="#"><img src="img/img04.png" alt="">
+                  <p>빵</p>
+               </a>
+            </article>
+            <article class="swiper-slide ice_tea">
+               <a href="#"><img src="img/img05.png" alt="">
+                  <p>아이스티</p>
+               </a>
+            </article>
+            <article class="swiper-slide vanila_latte">
+               <a href="#"><img src="img/vanilla_latte.png" alt="">
+                  <p>바닐라라떼</p>
+               </a>
+            </article>
+            <article class="swiper-slide caramel_macchiato">
+               <a href="#"><img src="img/caramel_macchiato.png" alt="">
+                  <p>캬라멜마끼아또</p>
+               </a>
+            </article>
+         </div><!-- //popular_menu -->
+         <div class="swiper-pagination"></div>
+      </section><!-- //contents2 -->
+
+      <!-- swiper에서 cover flow로 슬라이드하자. -->
+      <section class="season_menu">
+         <h2><a href="#">추천 메뉴</a></h2>
+         <div class="swiper">
+            <ul class="swiper-wrapper slide">
+               <li class="swiper-slide slide1">
+                  <a href="#"><img src="img/snack.png" alt="slide1">
+                     <p>구름 모양 스낵</p>귀여운 맛과 모양
+                  </a>
+               </li>
+               <li class="swiper-slide slide2">
+                  <a href="#"><img src="img/tea.png" alt="slide2">
+                     <p>마시멜로우 구름 차</p>겨울을 맞이한 선택
+                  </a>
+               </li>
+               <li class="swiper-slide slide3">
+                  <a href="#"><img src="img/jelly.png" alt="slide3">
+                     <p>구름 젤리</p>재미있는 맛과 식감
+                  </a>
+               </li>
+               <li class="swiper-slide slide4">
+                  <a href="#"><img src="img/snack.png" alt="slide1">
+                     <p>구름 모양 스낵</p>귀여운 맛과 모양
+                  </a>
+               </li>
+               <li class="swiper-slide slide5">
+                  <a href="#"><img src="img/tea.png" alt="slide2">
+                     <p>마시멜로우 구름 차</p>겨울을 맞이한 선택
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section><!-- //season_menu -->
+
+
+      <section class="content3">
+         <article class="news_box">
+            <h2 class="title1"><a href="#"><p>News</p></a></h2>
+            <ul>
+               <li><a href="#"><img src="img/cloud.png" alt="">
+                    <p>2024 마지막 할인</p>
+                  </a></li>
+               <li><a href="#"><img src="img/cloud.png" alt="">
+                  <p>여러분과 함께한 2024년
+                        마지막 신메뉴 이벤트!</p>
+                  </a></li>
+               <li><a href="#"><img src="img/cloud.png" alt="">
+                  <p>2025 신메뉴 공개</p>
+                  </a></li>
+            </ul>
+         </article>
+         <article class="event_box">
+            <h2 class="title2"><a href="#"></a><p>Event</p></h2>
+            <ul>
+               <li><a href="#"><img src="img/cloud.png" alt="">
+                  <p>쿠폰 10개 도장시 아메리카노 무료</p>
+                  </a></li>
+               <li><a href="#"><img src="img/cloud.png" alt="">
+                  <p>sns 리뷰 이벤트!!</p>
+                  </a></li>
+               <li><a href="#"><img src="img/cloud.png" alt="">
+                  <p>첫 방문시 빵 10% 할인</p>
+                  </a></li>
+            </ul>
+         </article>
+      </section>
+
+      <section class="period">
+         <div class="period_box">
+            <h2>카페 몽글 변화</h2>
+         </div><!-- //period_box -->
+         <ul>
+            <li><a href="#"><img src="img/KakaoTalk_20250118_180842877 1.png" alt="">
+                  <p>01 첫 오픈</p><br>카페몽글에 오신것을 환영합니다
+               </a></li>
+            <li><a href="#"><img src="img/KakaoTalk_20250118_180842608 1.png" alt="">
+                  <p>02 재 인테리어</p><br>커피도 마음도 새 다짐으로 출발합니다
+               </a></li>
+            <li><a href="#"><img src="img/KakaoTalk_20250118_180842371 1.png" alt="">
+                  <p>03 매출 상승</p><br>여러분의 성원에 감사드립니다
+               </a></li>
+            <li><a href="#"><img src="img/KakaoTalk_20250118_180842156 1.png" alt="">
+                  <p>04 지역 신문</p><br>오늘도 카페몽글에서 커피 한잔하세요
+               </a></li>
+         </ul>
+      </section><!-- //period -->
+
+      <div class="information">
+         <div class="info_pic">
+            <a href="#"><img src="img/cafe_img.webp" alt=""></a>
+         </div><!-- info_pic -->
+         <div class="info_txt">
+            <p>운영안내</p>
+            <div class="explain">
+               평일 9:00~23:00
+               <br>주말9:00~24:00
+               <br>주소 경기도 수원시 권선동 11-11
+               <br>대표자 최이현
+               <br>사업자번호123-45-67890
+            </div><!-- //explain -->
+         </div><!-- //info_txt -->
+      </div><!-- //infomation -->
+
+      <footer>
+            <p>수원시 권선점 카페몽글<br> 031-234-1234</p>
+      </footer>
+   </div><!-- //wrap -->
+</body>
+
+</html>

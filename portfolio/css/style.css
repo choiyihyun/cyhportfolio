@@ -1,0 +1,980 @@
+@charset "utf-8";
+
+body {
+    background: #141414;
+}
+
+#brand-intro {
+    position: fixed;
+    z-index: 9999;
+    background: linear-gradient(to bottom right, #fdf6e3, #d4eac8);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: opacity 1s ease;
+}
+
+.brand-name {
+    display: flex;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 0.5em;
+    justify-content: center;
+}
+
+.welcome {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+#enter-btn {
+    display: flex;
+    margin: 0 auto;
+    padding: 0.7em 1.5em;
+    font-size: 1rem;
+    background-color: #ff8a65;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#enter-btn:hover {
+    background-color: #ff7043;
+}
+
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    pointer-events: none;
+    /* 커서 위에 있는 요소 클릭 방지 */
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 9999;
+}
+
+.custom-cursor img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.ability_box {
+    display: flex;
+    text-align: center;
+}
+
+
+html,
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif "Anybody", sans-serif "IBM Plex Sans KR", sans-serif Gmarket Sans;
+    position: relative;
+    height: 100%;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+.wrap {
+    width: 100%;
+    height: 1000px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.background {
+    width: 100%;
+    display: block;
+}
+
+.foreground {
+    position: absolute;
+    top: 50%;
+    /* 필요에 따라 조절 */
+    left: 56%;
+    /* 필요에 따라 조절 */
+    transform: translate(-50%, -50%);
+    /* 가운데 정렬 */
+    width: 1024px;
+    height: 1030px;
+    /* 이미지 크기 조절 */
+}
+
+.left {
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    color: white;
+}
+
+.left p {
+    display: block;
+    font-size: 50px;
+}
+
+.left p span {
+    display: block;
+    font-size: 138px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+}
+
+.right {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    text-align: right;
+    color: white;
+    font-size: 48px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+}
+
+#leaf-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.leaf {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/leaf.png');
+    /* 나뭇잎 PNG 이미지 URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+.menu-button {
+    display: none;
+    /* 처음엔 숨겨둠 */
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: #F3A461;
+    transition: 0.3s;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    /* 처음에 화면 밖에 숨김 */
+    width: 200px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+    z-index: 10000;
+    transition: left 0.3s ease;
+    padding: 100px 20px;
+}
+
+.side-menu.active {
+    left: 0;
+    /* 메뉴 열리면 화면 안으로 들어옴 */
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    margin-bottom: 30px;
+}
+
+.side-menu ul li a {
+    color: black;
+    font-size: 19px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* .vid {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.9;
+}
+
+.vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
+
+
+#qa {
+    width: 100%;
+    padding: 150px 0;
+    background: #FFFCF6;
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    font-size: 80px;
+    text-align: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+section h2 span {
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.txt_box p {
+    display: block;
+    font-size: 28px;
+}
+
+#qa .hashtag {
+    margin: 0 auto;
+}
+
+#qa .qa_grid {
+    width: 1306px;
+    height: 886px;
+    flex-wrap: wrap;
+    border: 3px solid #F3A461;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 10px;
+    padding: 70px 88px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.qa_card {
+    display: flex;
+    text-align: center;
+    position: relative;
+    width: 360px;
+    height: 360px;
+    flex-shrink: 0;
+    background: #eee;
+    cursor: pointer;
+}
+
+.qa_card img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    position: relative;
+}
+
+.qa_card .txt_box {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 👉 Flex 사용으로 수직 + 수평 정렬 가능 */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.qa_card:hover .txt_box {
+    opacity: 1;
+}
+
+.qa_card p {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#ability {
+    width: 100%;
+    height: 1000px;
+    background: #FFEFD7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ability h2 {
+    width: 643px;
+    color: #0B0B0B;
+    display: block;
+    text-align: center;
+    /* background: #ccc; */
+}
+
+#ability h2 em {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+#ability .ability_box {
+    display: flex;
+    width: 1320px;
+    height: 650px;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    color: white;
+}
+
+#ability .ability_box_bottom {
+    display: flex;
+    width: 1400px;
+    height: 350px;
+    justify-content: space-evenly;
+    margin-left: 220px;
+    color: white;
+}
+
+#ability .ability_box1 {
+    width: 308px;
+    height: 308px;
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.ability_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 👉 Flex 사용으로 수직 + 수평 정렬 가능 */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.ability_box1:hover .ability_txt {
+    opacity: 1;
+}
+
+#ability .ability_box2 {
+    width: 308px;
+    height: 308px;
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.ability_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 👉 Flex 사용으로 수직 + 수평 정렬 가능 */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.ability_box2:hover .ability_txt {
+    opacity: 1;
+}
+
+#ability .ability_box3 {
+    width: 308px;
+    height: 308px;
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.ability_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 👉 Flex 사용으로 수직 + 수평 정렬 가능 */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.ability_box3:hover .ability_txt {
+    opacity: 1;
+}
+
+#ability .ability_box4 {
+    width: 308px;
+    height: 308px;
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.ability_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 👉 Flex 사용으로 수직 + 수평 정렬 가능 */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.ability_box4:hover .ability_txt {
+    opacity: 1;
+}
+
+#ability .ability_box5 {
+    width: 308px;
+    height: 308px;
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.ability_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 👉 Flex 사용으로 수직 + 수평 정렬 가능 */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.ability_box5:hover .ability_txt {
+    opacity: 1;
+}
+
+#ability .ability_box6 {
+    width: 308px;
+    height: 308px;
+    position: relative;
+    display: inline-block;
+    background: #eee;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.ability_txt {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* 👉 Flex 사용으로 수직 + 수평 정렬 가능 */
+    align-items: center;
+    /* 수직 정렬 */
+    justify-content: center;
+    /* 수평 정렬 */
+
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    border-radius: 30px;
+}
+
+.ability_box6:hover .ability_txt {
+    opacity: 1;
+}
+
+.projects_tit {
+    display: flex;
+    width: 100%;
+    height: 540px;
+    background: #141414;
+    justify-content: center;
+    align-items: center;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    flex-direction: column;
+}
+
+.projects_tit>h2 {
+    display: block;
+    font-size: 88px;
+    text-align: center;
+    color: #fff;
+}
+
+.projects_tit>p {
+    display: block;
+    justify-content: center;
+    margin-top: -32px;
+    font-size: 30px;
+    color: #eee;
+}
+
+.projects {
+    width: 100%;
+    /* height: 3640px; */
+    background: #141414;
+    /* display: flex; */
+    font-family: Gmarket Sans TTF;
+
+    /* overflow: hidden; */
+}
+
+.projects .inner {
+    display: flex;
+    align-items: flex-start;
+    width: 1320px;
+    height: 2000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.falling_img {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /*     width: 200px;
+    height: 300px;
+    margin-left: 200px;
+    margin-top: 800px; */
+}
+
+.projects_box {
+    display: flex;
+}
+
+
+
+.projects_box p {
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    line-height: 1.8;
+    padding-top: 40px;
+}
+
+.projects p span {
+    display: block;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.projects .projects_box1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.projects .projects_box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 60px 0 0 0;
+    gap: 50px;
+}
+
+.projects .projects_box1,
+.projects .projects_box2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.projects_card1,
+.projects_card2,
+.projects_card3,
+.projects_card4,
+.projects_card10 {
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.projects_card1:hover,
+.projects_card2:hover,
+.projects_card3:hover,
+.projects_card4:hover,
+.projects_card10:hover {
+    transform: translateY(-10px)scale(1.01);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+.projects .buttons {
+    display: flex;
+    gap: 1rem;
+    /* 버튼 사이 간격 */
+    justify-content: center;
+    /* 가운데 정렬 */
+}
+
+.projects .projects_box1 .projects_card1 {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_card1 .go-button {
+    width: 190px;
+    height: 52px;
+    color: white;
+    background: black;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.projects .projects_box1 .projects_card2 {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_card2 .go-button {
+    width: 190px;
+    height: 52px;
+    color: white;
+    background: black;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.projects .projects_box2 .projects_card3 {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_card3 .go-button {
+    width: 190px;
+    height: 52px;
+    color: white;
+    background: black;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.projects .projects_box2 .projects_card4 {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_card4 .go-button {
+    width: 190px;
+    height: 52px;
+    color: white;
+    background: black;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.projects .projects_box2 .projects_card10 {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_card10 .go-button {
+    width: 190px;
+    height: 52px;
+    color: white;
+    background: black;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.go-button:hover {
+    background-color: #e57350;
+    transform: translateY(-2px);
+}
+
+.projects .re_design {
+    padding: 340px 0;
+    /* background: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects .re_design_tit {
+    width: 300px;
+    font-size: 56px;
+    color: #ffffff;
+    height: 100px;
+    /* background: #F3A461; */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.projects .re_design_list {
+    width: 1300px;
+    /* height: 320px; */
+}
+
+.projects .re_design_list div {
+    height: 80px;
+    color: #ffffff;
+    display: flex;
+    /* background: #d4eac8; */
+    border-bottom: 1px solid #ffffff;
+    font-size: 28px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.projects .re_design_list div em {
+    width: 140px;
+    display: block;
+
+}
+
+.projects .re_design_list div p {
+
+    font-size: 24px;
+}
+
+.projects .re_design_list div span {
+    display: block;
+
+}
+
+.projects .re_design_list a.bg {
+    width: 100%;
+    height: 400px;
+    background-image: url(../national_ballet/img/mv1.jpg);
+    display: none;
+}
+
+.projects .re_design_list a.bg.active {
+    display: block;
+}
+
+.projects .re_design_list a.bg1 {
+    background-image: url(../national_ballet/img/mv1.jpg);
+}
+
+.projects .re_design_list a.bg2 {
+    background-image: url(../national_ballet/img/mv1.jpg);
+}
+
+.projects .re_design_list a.bg3 {
+    background-image: url(../national_ballet/img/mv1.jpg);
+}
+
+.projects .re_design_list a.bg4 {
+    background-image: url(../national_ballet/img/mv1.jpg);
+}
+
+.footer {
+    font-family: "IBM Plex Sans KR", sans-serif;
+    display: flex;
+    width: 100%;
+    height: 890px;
+    background: #0B0B0B;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 200px;
+    border-radius: 300px 300px 0 0;
+}
+
+.footer h2 {
+    color: white;
+    font-size: 128px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer p {
+    display: block;
+    color: white;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+/* .footer .img1 {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    margin-top: -240px;
+} */
+
+.footer .img2 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin-top: -100px;
+    margin-left: 1200px;
+}
