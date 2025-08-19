@@ -136,7 +136,7 @@ body.no-scroll {
 
 .left p span {
     display: block;
-    font-size: 138px;
+    font-size: 40px;
     font-weight: bold;
     position: absolute;
     top: 50%;
@@ -148,7 +148,7 @@ body.no-scroll {
     right: 5%;
     text-align: right;
     color: white;
-    font-size: 48px;
+    font-size: 42px;
     font-family: "IBM Plex Sans KR", sans-serif;
 }
 
