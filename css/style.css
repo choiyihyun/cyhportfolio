@@ -131,14 +131,14 @@ body.no-scroll {
 
 .left p {
     display: block;
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .left p span {
     display: block;
     font-size: 40px;
     position: absolute;
-    top: 55%;
+    top: 70%;
 }
 
 .right {
