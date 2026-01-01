@@ -643,7 +643,7 @@ section h2 span {
     display: flex;
     align-items: flex-start;
     width: 1320px;
-    height: 2000px;
+    height: 2800px;
     margin: 0 auto;
     text-align: center;
 }
@@ -708,6 +708,7 @@ section h2 span {
 .projects_card2,
 .projects_card3,
 .projects_card4,
+.projects_card5,
 .projects_card10 {
     padding: 30px;
     background: white;
@@ -721,6 +722,7 @@ section h2 span {
 .projects_card2:hover,
 .projects_card3:hover,
 .projects_card4:hover,
+.projects_card5:hover,
 .projects_card10:hover {
     transform: translateY(-10px)scale(1.01);
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
@@ -830,6 +832,30 @@ section h2 span {
     border-radius: 30px;
 }
 
+.projects .projects_box2 .projects_card5 {
+    width: 450px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects_card5 .go-button {
+    width: 190px;
+    height: 52px;
+    color: white;
+    background: black;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    font-size: 26px;
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
 .projects .projects_box2 .projects_card10 {
     width: 450px;
     height: 600px;
@@ -857,83 +883,6 @@ section h2 span {
 .go-button:hover {
     background-color: #e57350;
     transform: translateY(-2px);
-}
-
-.projects .re_design {
-    padding: 340px 0;
-    /* background: yellow; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.projects .re_design_tit {
-    width: 300px;
-    font-size: 56px;
-    color: #ffffff;
-    height: 100px;
-    /* background: #F3A461; */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.projects .re_design_list {
-    width: 1300px;
-    /* height: 320px; */
-}
-
-.projects .re_design_list div {
-    height: 80px;
-    color: #ffffff;
-    display: flex;
-    /* background: #d4eac8; */
-    border-bottom: 1px solid #ffffff;
-    font-size: 28px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.projects .re_design_list div em {
-    width: 140px;
-    display: block;
-
-}
-
-.projects .re_design_list div p {
-
-    font-size: 24px;
-}
-
-.projects .re_design_list div span {
-    display: block;
-
-}
-
-.projects .re_design_list a.bg {
-    width: 100%;
-    height: 400px;
-    background-image: url(../national_ballet/img/mv1.jpg);
-    display: none;
-}
-
-.projects .re_design_list a.bg.active {
-    display: block;
-}
-
-.projects .re_design_list a.bg1 {
-    background-image: url(../national_ballet/img/mv1.jpg);
-}
-
-.projects .re_design_list a.bg2 {
-    background-image: url(../national_ballet/img/mv1.jpg);
-}
-
-.projects .re_design_list a.bg3 {
-    background-image: url(../national_ballet/img/mv1.jpg);
-}
-
-.projects .re_design_list a.bg4 {
-    background-image: url(../national_ballet/img/mv1.jpg);
 }
 
 .footer {
